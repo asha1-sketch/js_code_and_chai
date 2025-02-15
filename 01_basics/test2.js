@@ -37,7 +37,7 @@ let a ="        ohlh    ojo     "
 console.log(a.trim());
 console.log("asha sharma".replace("asha","prem"));
 console.log(statement.includes("i.t"));
-*/
+
 const balance=new Number(2516.8956)
 console.log(balance);
 console.log(balance.toString().length);
@@ -50,4 +50,17 @@ console.log(Math.abs(-56));
 console.log(Math.sqrt(balance));
 console.log(Math.random());//Returns a pseudorandom number between 0 and 1
 console.log(Math.round((Math.random())*10+1));
+*/
+let mydate=new Date()
+console.log(mydate.toString());
+console.log(mydate.toISOString());
+console.log(mydate.toJSON());
+console.log(mydate.toLocaleString().split(","));
+console.log(mydate.toDateString());
+let meraDin=new Date("02-15-2025")
+console.log(meraDin.getTime());
+console.log(meraDin.getMonth());
+console.log(meraDin.getFullYear());
+console.log(meraDin.getDay());
+console.log(Date.now()/1000);
 
