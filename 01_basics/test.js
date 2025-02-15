@@ -14,7 +14,7 @@ let ok=123;
 console.log(ok);
 console.log(typeof(null));
 console.log(typeof(undefined));
-*/
+
 let score="45ab"
 let score1=Number(score)
 console.log(typeof(score1));
@@ -38,3 +38,23 @@ console.log(null==0);
 console.log(undefined==0);
 console.log(undefined>=0);
 console.log("2"==2);
+*/
+const id =Symbol("123")
+const okk=Symbol("123")
+console.log(id);
+console.log(okk)
+console.log(id == okk);
+const arr=[1,2,"asha",5 ,null]
+console.log(typeof(arr));
+const obj={
+    name:"asha",
+    age:20
+}
+console.log(typeof(obj));
+console.log(obj.name);
+console.log(obj.age);
+function myfunction(){
+    console.log("hello");
+}
+myfunction()
+console.log(typeof(myfunction));
