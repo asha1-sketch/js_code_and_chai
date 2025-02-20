@@ -1,4 +1,4 @@
-const myarr=[1,2,3,4,56,4]
+/*const myarr=[1,2,3,4,56,4]
 myarr.push(100)
 console.log(myarr);
 myarr.pop()
@@ -42,3 +42,65 @@ const person={
 console.log(person.name);
 console.log(person["name"]);//agar square bracket se access karna hai to key ko string leke chalna padega
 console.log(person[sy]);
+person.greeting=function(){
+    console.log("hi user");
+};
+person.greeting()
+person.greet=function(){
+    console.log(`hi ${this.name}`);
+}
+person.greet()
+*/
+const facebook=new Object()
+facebook.id=1234
+facebook.user_name="ashasharma"
+facebook.isLoggedin=false
+console.log(facebook);
+const regular_user={
+    name:"ashahah",
+    fullname:{
+        full:"sharma",
+        last:"sandal"
+    }
+}
+console.log(regular_user.fullname.full);
+const obj1={
+    1:"as",
+    2:"45"
+}
+const obj2={
+    ok:"okokk"
+}
+//const obj3=Object.assign({},obj1,obj2)
+const obj3={...obj1,...obj2}
+console.log(obj3);
+const arr=[
+    {
+        1:"a",
+        sa:54
+    },
+    {
+        2:"b"
+
+    },
+    {
+        3:"c"
+    }
+]
+obj3.greet=function(){
+    console.log("hi");
+}
+console.log(arr[0].sa);
+console.log(Object.keys(obj3));
+console.log(Object.values(obj3));
+console.log(Object.entries(obj3));
+console.log(obj3.hasOwnProperty("greet"));
+console.log(obj3);
+const course={
+    name:'asha',
+    subject:"iwt",
+    teacher_name:"ms aarti"
+}
+console.log(course.teacher_name);
+const {teacher_name: teacher}=course
+console.log(teacher);
