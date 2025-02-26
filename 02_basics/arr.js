@@ -51,6 +51,7 @@ person.greet=function(){
 }
 person.greet()
 */
+/*
 const facebook=new Object()
 facebook.id=1234
 facebook.user_name="ashasharma"
@@ -104,3 +105,116 @@ const course={
 console.log(course.teacher_name);
 const {teacher_name: teacher}=course
 console.log(teacher);
+function doller(valuee){
+    return "$"+valuee
+}
+console.log(typeof doller(100));
+function add(num1,num2){
+    return num1+num2
+}
+console.log(add(4,5))
+function logg(user){
+    if(user===undefined){
+        console.log("kya kar raha hai bhai");
+        return
+    }
+    return `${user.name} has logged in`
+}
+console.log(logg());
+function carrt(...num){
+    return num
+}
+console.log(1,2,3,45,6);
+function get(arr){
+    return arr[1]
+}
+console.log(get([1,223,3,4,5,6,7,]));
+*/
+
+{ // this is a block.
+  let a =10
+  const b=20
+  var c=30
+}
+//console.log(a);
+//console.log(b);
+//console.log(c);
+/*function one(){
+    const a=10
+    function two(){
+        var b=20
+        console.log(a);
+    }
+    two()
+ console.log(b);
+}
+one()
+*/
+// let user={
+// username:"asha",
+// age: 20,
+// welcome:function(){
+// console.log(`welcome, ${this.username}.`);
+// console.log(this);
+//  }
+// }
+// user.welcome()
+// user.username="prem"
+// user.age=17
+// user.welcome()
+
+// console.log(this);
+// function one(){
+//     console.log(this);
+// }
+// one()
+// const add=(num1,num2)=>{
+//     return num1+num2
+// }
+// const add=(num1,num2)=> num1 + num2;
+// const add=(num1,num2)=>(num1+num2)
+// console.log(add(2,3));
+// (function(){
+//     console.log(`hi`);
+// })()
+// (
+//     ()=>{
+//         console.log(`hi`);
+//     }
+// )()
+// (function aur(){
+//     console.log('hi');
+// })();
+// (
+//     (name)=>{
+//         console.log(`hi,${name}`);
+//     }
+// )("asha");
+// console.log(this);
+// if(true){
+//     console.log("ok");
+// }
+// if (false){
+// // doesnot matter
+// }
+// console.log(2==="2");//false
+// if(true) console.log("ok");
+const balance=700
+if(balance>1000){
+    console.log("less than 1000");
+}else if(balance>900){
+    console.log("less than 900");
+}else if(balance>800){
+    console.log("less than 800");
+}
+else if(balance>700){
+console.log("less than 700");
+}
+else{
+    console.log("ye tumhari father ki daily salary hai");
+}
+if("asha"){
+    console.log("yes");
+}else {
+    console.log("no");
+}
