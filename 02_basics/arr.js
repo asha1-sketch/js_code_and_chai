@@ -199,22 +199,95 @@ one()
 // }
 // console.log(2==="2");//false
 // if(true) console.log("ok");
-const balance=700
-if(balance>1000){
-    console.log("less than 1000");
-}else if(balance>900){
-    console.log("less than 900");
-}else if(balance>800){
-    console.log("less than 800");
+// const balance=700
+// if(balance>1000){
+//     console.log("less than 1000");
+// }else if(balance>900){
+//     console.log("less than 900");
+// }else if(balance>800){
+//     console.log("less than 800");
+// }
+// else if(balance>700){
+// console.log("less than 700");
+// }
+// else{
+//     console.log("ye tumhari father ki daily salary hai");
+// }
+
+// if(5){
+//     console.log("yes");
+// }else {
+//     console.log("no");
+// }
+for(let ii=0;ii<10;ii++){
+    const x=ii
+    console.log(x);
+    if(ii==7){
+        console.log(ii,"is good number"
+        );
+    }
+    // console.log(i);
 }
-else if(balance>700){
-console.log("less than 700");
-}
-else{
-    console.log("ye tumhari father ki daily salary hai");
-}
-if("asha"){
-    console.log("yes");
-}else {
-    console.log("no");
-}
+// if we want to select a particular word everwhere in a block
+//  do ctrl+d multiple times
+// for(let i=0;i<10;i++){
+//     console.log("*".repeat(3));
+    
+// }
+// for(let i=1;i<=10;i++){
+//     if(i==7){
+//         console.log("7 aagya");
+//         continue;
+//     }
+//     console.log("2*"+`${i}`+"="+2*i);
+// }
+// let i=0
+// while(i<10){
+// console.log("Asha sharma");
+// if(i==7){
+//     console.log("7 aagya oeee");
+//     i++
+//     continue
+// }
+// i++
+// }
+// let s=1
+// do{
+//     console.log(`score is ${s}`);
+//     s++
+// }while(s<10)
+// const arr=["Asha","Prem","kushal","Purvi"]
+// for (let i of arr){
+//     console.log(i);
+// }
+// const a="asha"
+// for(let i of a){
+//     console.log(i);
+// }
+// let tt="asha sharma"
+// let t=tt.split("").map(name=>name.toUpperCase())
+// console.log(t);
+// const map=new Map() 
+// map.set(7,"birthdate")
+// map.set("in","india")
+// map.set("us","united states of america")
+// console.log(map);
+// for(const i of map){
+//     console.log(i);
+// }
+// console.log(map.size);
+// console.log(map.get(7));
+// console.log(map.has("in"));
+// map.delete("us")
+// console.log(map.has("us"));
+// const obj={
+//     "name":"asha"
+// }
+// console.log(obj.name);
+const arr=["Asha","Prem","kushal","Purvi"]
+arr.forEach((x)=>{
+    x=x.toUpperCase()
+    
+ })
+//  forEach is kind of loop
+// console.log(arr);
