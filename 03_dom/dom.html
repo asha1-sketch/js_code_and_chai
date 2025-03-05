@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;
+color:white">
+    <!-- <div class="bg-black">
+        <h1 id="title" class="Heading">Learning document object model
+            <span>ok</span>
+        </h1>
+        <p id="para">lorem ipsum iot to palarinf</p>
+        <h1 id="title" class="Heading">Learning document object model
+            <span>ok</span>
+        </h1>
+        <h1 id="title" class="Heading">Learning document object model
+            <span>ok</span>
+        </h1>
+        <h1id="title" class="Heading">Learning document object model
+            <span>ok</span>
+        </h1>
+        <h1 id="title" class="Heading">Learning document object model
+            <span>ok</span>
+        </h1>
+        <h1 id="title" class="Heading">Learning document object model
+            <span>ok</span>
+        </h1>
+        <input type="password" name="ok" id="okk">
+        <ul>
+            <li class="okk">asha</li>
+            <li class="okk">divya</li>
+            <li class="okk">purvi</li>
+        </ul>
+    </div> -->
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+    <ul>
+        <li>java</li>
+    </ul>
+    <script>
+        // const tok=document.querySelectorAll(".day")
+        // console.log(tok);
+        const parent=document.querySelector(".parent")
+        // console.log(parent.children);
+        // console.log(parent.children[0].innerHTML);
+        // for (let i = 0; i < parent.children.length; i++) {
+        //    console.log(parent.children[i].innerHTML);
+        // }
+        // parent.children[0].style.fontSize="25px"
+        // parent.children[0].style.fontWeight="bold"
+        // parent.children[0].style.color="orange"
+        console.log(parent.firstElementChild.innerHTML);
+        console.log(parent.lastElementChild.innerHTML);
+        console.log(document.body.children);
+        console.log(document.body.childNodes);
+        console.log(parent.childNodes);
+        const ok=document.createElement("p")
+        console.log(ok);
+        ok.className="prem"
+        ok.id="sharma"
+        // document.querySelector(".prem").innerHTML="prem is my brother";
+        // console.log(document.querySelector(".prem"));
+        // ok.innerHTML="Asha"
+        ok.style.backgroundColor="red"
+        const t=document.createTextNode("prem chopra")
+        ok.appendChild(t)
+        document.body.appendChild(ok)
+        function add(l){
+            const t=document.createElement("li")
+            const q=document.querySelector('ul')
+            t.appendChild(document.createTextNode(l))
+            q.append(t)
+        }
+        add("pyhton")
+        add("css html")
+        const l=document.createElement("li")
+        l.innerHTML="typescript"
+        const n=document.querySelector("li:nth-child(2)")
+        n.replaceWith(l)
+        const ko=document.querySelector("li:last-child")
+        ko.remove()
+    </script>
+
+
+</body>
+</html>
