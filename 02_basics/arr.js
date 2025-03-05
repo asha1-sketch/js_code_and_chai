@@ -267,14 +267,14 @@ for(let ii=0;ii<10;ii++){
 // let tt="asha sharma"
 // let t=tt.split("").map(name=>name.toUpperCase())
 // console.log(t);
-// const map=new Map() 
-// map.set(7,"birthdate")
-// map.set("in","india")
-// map.set("us","united states of america")
-// console.log(map);
-// for(const i of map){
-//     console.log(i);
-// }
+const map=new Map() 
+map.set(7,"birthdate")
+map.set("in","india")
+map.set("us","united states of america")
+console.log(map);
+// // for(const i of map){
+// //     console.log(i);
+// // }
 // console.log(map.size);
 // console.log(map.get(7));
 // console.log(map.has("in"));
