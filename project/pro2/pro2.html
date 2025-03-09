@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro2.css">
+</head>
+<body>
+    <div class="head">
+        <div class="ing">
+    <h1>BMI calculator</h1>
+        </div>
+    <form action="">
+        <div class="first">
+            <label for="form1">height</label>
+            <input type="text" id="form1" placeholder="m"><br>
+        </div>
+        <div class="second">
+        <label for="form2">weight</label>
+        <input type="text" id="form2" placeholder="kg"><br>
+        </div>
+    <div class="third">
+    <label for="form3">age</label>
+    <input type="text" id="form3"><br>
+    </div>
+    <div class="rea"></div>
+    <button type="submit">calculate</button>
+    </form>
+    
+</div>
+    <script>
+        const form=document.querySelector("form")
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()//after submit form refreshes the page jske vajah se result gayab hora hai
+            let height=Number(document.querySelector("#form1").value)
+            let weight=Number(document.querySelector("#form2").value)
+            let result=document.querySelector(".rea")
+            const bmi=(weight/(height)**2).toFixed(2)
+            result.innerHTML=`<span>${bmi}</span>`
+            if(bmi<16) form.style.backgroundColor="red";
+            else if(16<bmi<18.5) form.style.backgroundColor="yellow";
+            else if (18.5<bmi<25) form.style.backgroundColor="green";
+            else form.style.backgroundColor="pink";
+        })
+        
+    </script>
+</body>
+</html>

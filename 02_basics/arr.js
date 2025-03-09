@@ -286,8 +286,12 @@ console.log(map);
 // console.log(obj.name);
 const arr=["Asha","Prem","kushal","Purvi"]
 arr.forEach((x)=>{
-    x=x.toUpperCase()
-    
+    x=x.toUpperCase()    
+    console.log(x);
  })
 //  forEach is kind of loop
-// console.log(arr);
+const t={
+    name:"asha"
+}
+const{name: ok}=t
+console.log();

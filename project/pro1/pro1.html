@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro1.css">
+</head>
+<body>
+    <!-- <div>
+    <h1 style="display: block;">Color scheme switcher</h1>
+    <nav>
+    <a href="#" class="red" onclick="red()"></a>
+    <a href="#" class="yellow" onclick="yellow()"></a>
+    <a href="#" class="pink" onclick="pink()"></a>
+    <a href="#" class="white" onclick="white()"></a>
+</nav>
+<h2>click over boxes.</h2>
+    </div>
+    <script>
+        function red(){
+            document.body.style.backgroundColor="red"
+        }
+        function yellow(){
+            document.body.style.backgroundColor="yellow"
+        }
+         function pink(){
+            document.body.style.backgroundColor="pink"
+        }
+        function white(){
+            document.body.style.backgroundColor="salmon"
+        }
+    </script> -->
+    <div class="main">
+    <h1 style="text-align: center;">Color Scheme Switcher</h1>
+    <div class="link">
+        <span class="button" id="red"></span>
+        <span class="button" id="grey"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="white"></span>
+    </div>
+    <h2 style="text-align: center;">Click on one of the boxes here.</h2>
+    </div>
+    <script>
+        const ok=document.querySelectorAll(".button")
+        console.log(ok);
+        ok.forEach((button)=>{
+                console.log(button);
+                button.addEventListener("click",(e)=>{
+                    console.log(e);
+                    console.log(e.target);
+                    if(e.target.id==="red"){
+                        document.body.style.backgroundColor="red"
+                    }
+                    if(e.target.id==="grey"){
+                        document.body.style.backgroundColor="grey"
+                    }
+                    if(e.target.id==="blue"){
+                        document.body.style.backgroundColor="blue"
+                    }
+                    if(e.target.id==="white"){
+                        document.body.style.backgroundColor="white"
+                    }
+                })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro4.css">
+</head>
+<body>
+    <div class="head">
+        <div class="diwali">
+            <p>Holi Gift Exchange</p>
+        </div>
+        <div class="form">
+            <form action="">
+                <input type="text" placeholder="Enter participant name:" id="inin">
+                <button class="addo" type="submit">Add person</button>
+                <div class="rea"></div>
+                <div class="second">
+                    <button class="Assign">Assign gifts</button>
+                    <button class="shuffle">Shuffle gifts</button>
+                    <button class="reset" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <textarea name="ok" id="ok" rows="4" cols="20">Messageok</textarea> -->
+    <script>
+        const to=document.querySelector("input")
+        const rea=document.querySelector(".rea")
+        const inputField =document.querySelector("#inin")
+        let update=()=>{
+        rea.innerHTML=participant.join(",")
+        }
+        let participant=[]
+        const gifts=["sweets","firecracker","clothes","crockery","bomb","decorations"]
+        const form=document.querySelector("form")
+        form.addEventListener("submit",(e)=>{
+        e.preventDefault()
+        const t=inputField.value.trim()
+        if(t){
+        participant.push(t)
+        update()
+        inputField.value=""
+        }
+        })
+    </script>
+</body>
+</html>
